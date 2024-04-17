@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainCard">
+        <div class="sidebar">
+            <div class="taskSort"> View tasks
+                <div class="sidebarOption">All tasks</div>
+                <div class="sidebarOption">Weeksly tasks</div>
+                <div class="sidebarOption">Completed tasks</div>
+            </div>
+            <div class="prioritySort"> Sort by priority
+                <div class="sidebarOption">High priority</div>
+                <div class="sidebarOption">Medium priority</div>
+                <div class="sidebarOption">Low priority</div>
+            </div>
+            <div class="createTask"> 
+                <button class="sidebarOption" id="createTaskButton">+ New task</button>
+            </div>
+        </div>
+        <div class="contentContainer">
+            <div class="contentCard"></div>
+        </div>
+        <div class="form-popup" id="form-popup" style="">
+            <form action="index.html" class="form-container">
+                <h1>New task</h1>
+                <label for="taskName">Name</label>
+                <input type="text" name="taskName" id="taskName" required>
+                <label for="taskDescription">Description</label>
+                <input type="text" name="taskDescription" id="taskDescription">
+                <div class="taskPriority">
+                    <label for="priority">Select priority</label>
+                    <select name="priority" id="priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <label for="form-submit" id="form-submit"></label>
+                <input type="submit" id="form-submit">
+            </form>
+                
+        </div>
+    </div>
+</body>
+</html>

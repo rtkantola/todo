@@ -1,0 +1,99 @@
+:root {
+    --mainColour: #a1fffc6b;
+    --secondaryColour: #fff4f4;
+    --backgroundColour: #ffffff;
+}
+
+
+
+html {
+    height: 100vh;
+}
+
+body {
+    font: monospace;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    background-color: rgba(226, 184, 125, 0.868);
+    
+}
+.mainCard {
+    position: relative;
+    display: grid;
+
+    background-color: var(--backgroundColour);
+    width: 74em;
+    height: 45em;
+    border-radius: 2em;
+    grid-template-columns: repeat(4, 1fr);
+    
+
+    box-shadow: 0px 0px 4px rgb(110, 110, 110);
+
+
+    
+}
+.sidebar {
+    display: grid;
+    grid-column: 1/2;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    background-color: var(--mainColour);
+
+    grid-template-rows: 2fr 2fr 1fr;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.contentContainer {
+    grid-column: 2/5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentCard {
+    background-color: var(--mainColour);
+
+    border-radius: 2em;
+    width: 50em;
+    height: 40em;
+}
+
+.sidebar > div {
+    justify-self: center;
+    align-self: center;
+}
+
+.sidebarOption {
+    background-color: var(--secondaryColour);
+
+    display: flex;
+    margin: 6px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 0.8em;
+    width: 14em;
+    height: 4em;
+}
+.form-popup {
+    display: none;
+    position: absolute;
+    top: 40%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+
+    width: 30em;
+    height: 20em;
+
+}
